@@ -11,6 +11,7 @@ var employeeBonus = [];
 var i = 3;
 var  percent = 0;
 
+
 var calculateSTI = function() {
   switch( employees[i][3] ) {
     case(3):
@@ -45,3 +46,9 @@ console.log(percent);
 };
 
 calculateSTI();
+var bonus = parseInt(employees[i][2]) * percent;
+console.log('Bonus is', bonus);
+var roundedBonus = Math.round(bonus);
+console.log('rounded bonus:', roundedBonus);
+var adjSalary = bonus + parseInt(employees[i][2]);
+console.log(adjSalary); 
