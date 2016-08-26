@@ -8,10 +8,8 @@ var employees = [atticus, jem, boo, scout];
 var employeeBonus = [];
 // function that takes in an employee array
 
-var i = 3;
 var  percent = 0;
-
-
+var bonusCalc = function(){
 var calculateSTI = function() {
   switch( employees[i][3] ) {
     case(3):
@@ -51,4 +49,13 @@ console.log('Bonus is', bonus);
 var roundedBonus = Math.round(bonus);
 console.log('rounded bonus:', roundedBonus);
 var adjSalary = bonus + parseInt(employees[i][2]);
-console.log(adjSalary); 
+console.log(adjSalary);
+employeeBonus.push(employees[ i ][ 0 ], percent, adjSalary, roundedBonus);
+console.log(employeeBonus);
+
+};
+
+for (var i = 0; i < employees.length; i++) {
+employeeBonus = [];
+  bonusCalc();
+}
