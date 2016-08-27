@@ -4,11 +4,10 @@ var boo = ["Boo", "11435", "54000", 3];
 var scout = ["Scout", "6243", "74750", 5];
 
 var employees = [atticus, jem, boo, scout];
-
-var employeeBonus = [];
-// function that takes in an employee array
-
 var  percent = 0;
+var employeeBonus = [];
+
+
 var bonusCalc = function(){
 var calculateSTI = function() {
   switch( employees[i][3] ) {
